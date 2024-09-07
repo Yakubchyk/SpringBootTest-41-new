@@ -17,16 +17,10 @@ public class InsertData {
             preparedStatement.setDouble(3, pricePriladka);
 
             int rowsAffected = preparedStatement.executeUpdate();
-            System.out.println("Добавлено в БД: " + rowsAffected);
 
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
     }
-
-    public static void main(String[] args) {
-        InsertData insertData = new InsertData();
-
-        insertData.insertRecord(100.50, 200.75, 300.25);
-    }
 }
+

@@ -1,9 +1,12 @@
 package com.springboot.springboottest41new.DAO;
 
+import org.springframework.stereotype.Repository;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+@Repository
 public class PostgresConnection {
 
     String url = "jdbc:postgresql://localhost:5432/postgres";
