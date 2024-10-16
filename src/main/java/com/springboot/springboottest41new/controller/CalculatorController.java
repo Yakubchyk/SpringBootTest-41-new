@@ -33,8 +33,6 @@ public class CalculatorController {
         double result = totalPriceService.getTotalPrice(variableParametersOperation);
         model.addAttribute("operation", variableParametersOperation);
         model.addAttribute("result", result);
-
-        // Вставляем или обновляем данные
         InsertData insertData = new InsertData();
         insertData.upsertRecord(
                 variableParametersOperation.getOneQuadratMetterFoilPrice(),
